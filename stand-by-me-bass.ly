@@ -13,6 +13,13 @@
   tagline = ##f
 }
 
+#(set-global-staff-size 30)
+
+\paper {
+  markup-system-spacing.padding = #4
+  system-system-spacing.padding = #6
+}
+
 lskip = #(define-music-function (count) (integer?) #{
   \repeat unfold $count { \skip 4 }
 #})
