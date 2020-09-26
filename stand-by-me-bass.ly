@@ -3,6 +3,13 @@
 \header {
   title = "Stand by Me"
   composer = "Ben E. King"
+  author = \markup \fromproperty #'header:composer
+  subject = \markup \concat { \fromproperty #'header:title " Bass Partition" }
+  keywords = #(string-join '(
+    "music"
+    "partition"
+    "bass"
+  ) ", ")
   tagline = ##f
 }
 
