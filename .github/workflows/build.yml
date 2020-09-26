@@ -14,17 +14,17 @@ jobs:
       - name: Make the output directories
         run: mkdir -p build/{a4,letter,svg,midi}
       - name: Build A4 PDF
-        uses: docker://jeandeaual/lilypond:2.18.2
+        uses: docker://jeandeaual/lilypond:latest
         with:
-          args: lilypond -dno-point-and-click -dmidi-extension="midi" -dpaper-size=\"a4\" -o build/a4 stand-by-me-bass.ly
+          args: lilypond -dno-point-and-click -dembed-source-code -dmidi-extension="midi" -dpaper-size=\"a4\" -o build/a4 stand-by-me-bass.ly
       - name: Build Letter PDF
-        uses: docker://jeandeaual/lilypond:2.18.2
+        uses: docker://jeandeaual/lilypond:latest
         with:
-          args: lilypond -dno-point-and-click -dmidi-extension="midi" -dpaper-size=\"letter\" -o build/letter stand-by-me-bass.ly
+          args: lilypond -dno-point-and-click -dembed-source-code -dmidi-extension="midi" -dpaper-size=\"letter\" -o build/letter stand-by-me-bass.ly
       - name: Build SVG
-        uses: docker://jeandeaual/lilypond:2.18.2
+        uses: docker://jeandeaual/lilypond:latest
         with:
-          args: lilypond -dbackend=svg -dno-point-and-click -dmidi-extension="midi" -dpaper-size=\"a4\" -o build/svg stand-by-me-bass.ly
+          args: lilypond --svg -dno-point-and-click -dmidi-extension="midi" -dpaper-size=\"a4\" -o build/svg stand-by-me-bass.ly
       - name: Remove extra MIDI files
         run: |
           cp build/a4/*.midi build/midi/

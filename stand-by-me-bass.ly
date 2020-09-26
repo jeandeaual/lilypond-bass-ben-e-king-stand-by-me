@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 \language "english"
 
 \header {
@@ -7,11 +7,11 @@
   tagline = ##f
 }
 
-lskip = #(define-music-function (parser location count) (integer?) #{
+lskip = #(define-music-function (count) (integer?) #{
   \repeat unfold $count { \skip 4 }
 #})
 
-song = #(define-music-function (parser location inTab) (boolean?) #{
+song = #(define-music-function (inTab) (boolean?) #{
   \tempo 4 = 120
   \clef #(if inTab "tab" "bass_8")
   \time 4/4
@@ -39,10 +39,10 @@ song = #(define-music-function (parser location inTab) (boolean?) #{
     \set StaffGroup.instrumentName = #"Bass"
     \set StaffGroup.midiInstrument = #"electric bass (finger)"
 
-    \new Staff \new Voice = "music" {
+    \new Staff {
       \song ##f
     }
-    \lyricsto "music" \new Lyrics {
+    \addlyrics {
       \lskip #29
       When the night has come and the land is dark
       and the moon is the on -- ly ___ light we'll see
