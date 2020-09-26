@@ -1,5 +1,4 @@
 \version "2.20.0"
-\language "english"
 
 \header {
   title = "Stand by Me"
@@ -16,21 +15,21 @@ song = #(define-music-function (inTab) (boolean?) #{
   \clef #(if inTab "tab" "bass_8")
   \time 4/4
   \relative c {
-    a4\2 r8 a~\2 a4 e8\3 gs\2
-    a4\2 r8 a~\2 a4 a8\2 gs\2
-    fs4 r8 fs~ fs4 e\3
-    fs4 r8 fs~ fs4 fs8 e
-    d4\3 r8 d~\3 d4 d8\3 fs\3
-    e4\3 r8 e~\3 e4 e8\3 gs\2
-    a4\2 r8 a~\2 a4 e8\3 gs\2
-    a4\2 r8 a~\2 a4 e8\3 gs\2
-    a4\2 r8 a~\2 a4 e8\3 gs\2
-    a4\2 r8 a~\2 a4 a8\2 gs\2
-    fs4 r8 fs~ fs4 e\3
-    fs4 r8 fs~ fs4 fs8 e
-    d4\3 r8 d~\3 d4 d8\3 fs\3
-    e4\3 r8 e~\3 e4 e8\3 gs\2
-    a4\2 r8 a~\2 a4 e8\3 gs\2
+    a4\2 r8 a~\2 a4 e8\3 gis\2
+    a4\2 r8 a~\2 a4 a8\2 gis\2
+    fis4 r8 fis~ fis4 e\3
+    fis4 r8 fis~ fis4 fis8 e
+    d4\3 r8 d~\3 d4 d8\3 fis\3
+    e4\3 r8 e~\3 e4 e8\3 gis\2
+    a4\2 r8 a~\2 a4 e8\3 gis\2
+    a4\2 r8 a~\2 a4 e8\3 gis\2
+    a4\2 r8 a~\2 a4 e8\3 gis\2
+    a4\2 r8 a~\2 a4 a8\2 gis\2
+    fis4 r8 fis~ fis4 e\3
+    fis4 r8 fis~ fis4 fis8 e
+    d4\3 r8 d~\3 d4 d8\3 fis\3
+    e4\3 r8 e~\3 e4 e8\3 gis\2
+    a4\2 r8 a~\2 a4 e8\3 gis\2
   }
 #})
 
