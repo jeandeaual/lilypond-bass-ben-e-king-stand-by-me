@@ -23,21 +23,26 @@ song = #(define-music-function (inTab) (boolean?) #{
   \time 4/4
   \key a \major
   \relative c {
-    a4\2 r8 a~\2 a4 e8\3 gis\2
-    a4\2 r8 a~\2 a4 a8\2 gis\2
-    fis4 r8 fis~ fis4 e\3
+    \set TabStaff.minimumFret = #4
+    \set TabStaff.restrainOpenStrings = ##t
+    a4 r8 a~ a4 e8 gis
+    a4 r8 a~ a4 a8 gis
+    fis4 r8 fis~ fis4 e
     fis4 r8 fis~ fis4 fis8 e
-    d4\3 r8 d~\3 d4 d8\3 fis\3
-    e4\3 r8 e~\3 e4 e8\3 gis\2
-    a4\2 r8 a~\2 a4 e8\3 gis\2
-    a4\2 r8 a~\2 a4 e8\3 gis\2
-    a4\2 r8 a~\2 a4 e8\3 gis\2
-    a4\2 r8 a~\2 a4 a8\2 gis\2
-    fis4 r8 fis~ fis4 e\3
+    % 5
+    d4 r8 d~ d4 d8 fis\2
+    e4 r8 e~ e4 e8 gis
+    a4 r8 a~ a4 e8 gis
+    a4 r8 a~ a4 e8 gis
+    a4 r8 a~ a4 e8 gis
+    % 10
+    a4 r8 a~ a4 a8 gis
+    fis4 r8 fis~ fis4 e
     fis4 r8 fis~ fis4 fis8 e
-    d4\3 r8 d~\3 d4 d8\3 fis\3
-    e4\3 r8 e~\3 e4 e8\3 gis\2
-    a4\2 r8 a~\2 a4 e8\3 gis\2
+    d4 r8 d~ d4 d8 fis
+    e4 r8 e~ e4 e8 gis
+    % 15
+    a4 r8 a~ a4 e8 gis
   }
 #})
 
