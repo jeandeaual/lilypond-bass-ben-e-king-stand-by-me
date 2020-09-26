@@ -59,11 +59,11 @@ song = #(define-music-function (inTab) (boolean?) #{
     \new Staff {
       \song ##f
     }
-    \addlyrics {
+    %{\addlyrics {
       \lskip #29
       When the night has come and the land is dark
       and the moon is the on -- ly ___ light we'll see
-    }
+    }%}
     \new TabStaff {
       \set TabStaff.stringTunings = #bass-tuning
       \song ##t
