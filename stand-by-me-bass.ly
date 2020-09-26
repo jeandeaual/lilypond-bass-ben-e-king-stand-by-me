@@ -14,6 +14,7 @@ song = #(define-music-function (inTab) (boolean?) #{
   \tempo 4 = 120
   \clef #(if inTab "moderntab" "bass_8")
   \time 4/4
+  \key a \major
   \relative c {
     a4\2 r8 a~\2 a4 e8\3 gis\2
     a4\2 r8 a~\2 a4 a8\2 gis\2
