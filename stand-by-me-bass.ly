@@ -2,14 +2,9 @@
 \language "english"
 
 \header {
-  title = "Stand by me"
+  title = "Stand by Me"
   composer = "Ben E. King"
-  tagline = \markup {
-    Engraved on
-    \simple #(strftime "%Y-%m-%d" (localtime (current-time)))
-    with \with-url #"http://lilypond.org/"
-    \line { LilyPond \simple #(lilypond-version) (http://lilypond.org/) }
-  }
+  tagline = ##f
 }
 
 lskip = #(define-music-function (parser location count) (integer?) #{
