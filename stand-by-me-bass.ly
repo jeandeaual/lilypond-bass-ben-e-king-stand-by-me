@@ -12,7 +12,7 @@ lskip = #(define-music-function (count) (integer?) #{
 
 song = #(define-music-function (inTab) (boolean?) #{
   \tempo 4 = 120
-  \clef #(if inTab "tab" "bass_8")
+  \clef #(if inTab "moderntab" "bass_8")
   \time 4/4
   \relative c {
     a4\2 r8 a~\2 a4 e8\3 gis\2
