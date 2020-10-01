@@ -52,10 +52,10 @@ song = #(define-music-function (inTab) (boolean?) #{
 #})
 
 \score {
-  \new StaffGroup <<
-    \set StaffGroup.instrumentName = #"Bass"
-    \set StaffGroup.midiInstrument = #"electric bass (finger)"
-
+  \new StaffGroup \with {
+    instrumentName = #"Bass"
+    midiInstrument = #"electric bass (finger)"
+  } <<
     \new Staff {
       \song ##f
     }
@@ -64,8 +64,11 @@ song = #(define-music-function (inTab) (boolean?) #{
       When the night has come and the land is dark
       and the moon is the on -- ly ___ light we'll see
     }%}
-    \new TabStaff {
-      \set TabStaff.stringTunings = #bass-tuning
+    \new TabStaff \with {
+      stringTunings = #bass-tuning
+      minimumFret = #5
+      restrainOpenStrings = ##t
+    } {
       \song ##t
     }
   >>
