@@ -25,6 +25,7 @@ lskip = #(define-music-function (count) (integer?) #{
 #})
 
 song = #(define-music-function (inTab) (boolean?) #{
+  \numericTimeSignature
   \tempo 4 = 120
   \clef #(if inTab "moderntab" "bass_8")
   \time 4/4
