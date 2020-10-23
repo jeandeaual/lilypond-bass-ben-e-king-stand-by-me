@@ -1,16 +1,12 @@
-title: GitHub Pages LilyPond template
-description: >-
-  Template used for LilyPond projects on GitHub Pages.
-baseurl: ""
+title: “Stand by Me” by Ben E. King
+baseurl: /lilypond-bass-stand-by-me
 url: https://jeandeaual.github.io
-repository: jeandeaual/lilypond-jekyll-template
+repository: jeandeaual/lilypond-bass-stand-by-me
 lang: en-US
 show_downloads: false
-
 # Build settings
 theme: jekyll-theme-minimal
 plugins: []
-
 defaults:
   - scope:
       path: "a4"
