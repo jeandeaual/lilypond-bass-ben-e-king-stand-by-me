@@ -16,11 +16,11 @@
 #(set-global-staff-size 30)
 
 song = {
-    \numericTimeSignature
-    \tempo 4 = 120
-    \time 4/4
-    \key a \major
-    \relative c {
+  \numericTimeSignature
+  \tempo 4 = 120
+  \time 4/4
+  \key a \major
+  \relative c {
     r4 a4 r8 a~ a4
     e8 gis a4 r8 a~ a4
     a8 gis fis4 r8 fis~ fis4
