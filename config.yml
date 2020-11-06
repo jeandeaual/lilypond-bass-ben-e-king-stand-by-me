@@ -8,10 +8,10 @@
   path: description
 - command: update
   path: baseurl
-  value: /lilypond-bass-stand-by-me
+  value: /lilypond-bass-ben-e-king-stand-by-me
 - command: update
   path: url
   value: https://jeandeaual.github.io
 - command: update
   path: repository
-  value: jeandeaual/lilypond-bass-stand-by-me
+  value: jeandeaual/lilypond-bass-ben-e-king-stand-by-me
