@@ -89,6 +89,10 @@ staff = #(define-music-function (scoreOnly tabOnly) (boolean? boolean?) #{
 \book {
   \bookOutputSuffix "score-only"
 
+  \header {
+    pdftitle = \markup \concat { \fromproperty #'header:title " (Score)" }
+  }
+
   \paper {
     markup-system-spacing.padding = #5
     system-system-spacing.padding = #8
@@ -104,6 +108,10 @@ staff = #(define-music-function (scoreOnly tabOnly) (boolean? boolean?) #{
 
 \book {
   \bookOutputSuffix "tab-only"
+
+  \header {
+    pdftitle = \markup \concat { \fromproperty #'header:title " (Tablature)" }
+  }
 
   \paper {
     markup-system-spacing.padding = #12
