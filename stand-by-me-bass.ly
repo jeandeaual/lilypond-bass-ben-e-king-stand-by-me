@@ -15,6 +15,10 @@
 
 #(set-global-staff-size 30)
 
+\paper {
+  indent = 0\mm
+}
+
 song = {
   \numericTimeSignature
   \tempo 4 = 120
@@ -46,7 +50,6 @@ song = {
 
 staff = #(define-music-function (scoreOnly tabOnly) (boolean? boolean?) #{
   \new StaffGroup \with {
-    instrumentName = #"Bass"
     midiInstrument = #"electric bass (finger)"
   } <<
       #(if (not tabOnly) #{
