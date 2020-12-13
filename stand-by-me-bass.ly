@@ -4,7 +4,12 @@
   title = "Stand by Me"
   composer = "Ben E. King"
   author = \markup \fromproperty #'header:composer
-  subject = \markup \concat { \fromproperty #'header:title " Bass Partition" }
+  subject = \markup \concat {
+    "Bass partition for “"
+    \fromproperty #'header:title
+    "” by "
+    \fromproperty #'header:composer
+  }
   keywords = #(string-join '(
     "music"
     "partition"
